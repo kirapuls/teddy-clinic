@@ -1,0 +1,263 @@
+body {
+    font-family: 'Nunito', sans-serif;
+    font-size: 14pt;
+    margin: 0;
+}
+
+.container {
+    width: 80vw;
+    margin: 0 auto;
+}
+
+.heart {
+    width:30px;
+}
+
+
+nav.nav-primary {
+    background-color: white;
+    margin-top: 1em;
+    padding: 0.5em 1em;
+    /* border-radius: 12px;
+    box-shadow: 0 3px 12px -6px rgba(0, 0, 0, 0.12); */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav.nav-primary a {
+    text-decoration: none;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.nav-primary-links a {
+    margin: 0 0.3em;
+    position: relative;
+    color: black;
+}
+
+.nav-primary-links a::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) scaleX(0);
+    transform-origin: left;
+    bottom: -8px;
+    width: 50%;
+    height: 3px;
+    background: #B72828;
+    border-radius: 5px;
+    transition: transform 0.2s ease-out;
+}
+
+.nav-primary-links a:hover {
+    color: #B72828;
+}
+
+.nav-primary-links a:hover::after,
+a.nav-primary-active::after {
+    transform: translateX(-50%) scaleX(100%);
+}
+
+.nav-logo a {
+    display: inline-block;
+    padding-top: 0.35em;
+    font-size: 2rem;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav-logo a:hover {
+    color: #B72828;
+}
+
+.btn-primary, .btn-secondary {
+    font-weight: bold;
+    padding: 0.7em 1.2em;
+    border-radius: 10px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn-primary {
+    background-color: black;
+    color: white;
+}
+
+.btn-secondary {
+    background-color: #FBF8EF;
+    color: black;
+}
+
+.btn-primary:hover {
+    background-color: #B72828;
+}
+
+.btn-primary:active {
+    box-shadow: 0 0 0 2px white, 0 0 0 4px #B72828;
+}
+
+.btn-primary:active {
+    box-shadow: 0 0 0 2px white, 0 0 0 4px black;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+}
+
+.contentBox1 {
+    grid-column: 2/10;
+    background-color: #B72828;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 4rem;
+    min-height: 30vw;
+}
+
+h1 {
+    font-size: 30pt;
+}
+
+.left {
+    padding: 8rem;
+}
+
+.buttonDiv {
+    margin-top: 4rem;
+}
+
+.right {
+    display: flex;
+}
+
+.sickBear {
+    width: 90%;
+    margin: auto;
+    display: block;
+}
+
+.pngBear {
+    grid-column-start: 4;
+    width: 10vw;
+    margin-top: 10rem;
+}
+
+.storyP {
+    font-size: 20pt;
+    grid-column: 5/8;
+    margin-left: 4rem;
+    margin-top: 12rem;
+}
+
+.customerH {
+    grid-column: 1/11;
+    text-align: center;
+    margin-top: 10rem;
+}
+
+.arrowleft {
+    grid-column: 3/4;
+    grid-row: 4/5;
+    margin: auto;
+}
+
+.arrowright {
+    grid-column: 8/9;
+    grid-row: 4/5;
+    margin: auto;
+}
+
+.contentBox2 {
+    grid-column: 4/8;
+    background-color: #FBF8EF;
+}
+
+.sheep {
+    width: 100%;
+}
+
+.review {
+    margin: 3rem 9rem;
+    font-size: 14pt;
+}
+
+.contentBox3 {
+    grid-column: 1/11;
+    background-color: #FBF8EF;
+    display: grid;
+    grid-template-columns: 4fr 4fr 1fr 4fr 1fr 4fr 4fr;
+    margin-bottom: 10rem;
+    margin-top: 10rem;
+}
+
+h3 {
+    color: #B72828;
+}
+
+.packages {
+    grid-column: 1/11;
+    text-align: center;
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+}
+
+.package1 {
+    grid-column: 2/3;
+    background-color: white;
+    margin-bottom: 2rem;
+    padding: 3rem;
+}
+
+.package2 {
+    grid-column: 4/5;
+    background-color: white;
+    margin-bottom: 2rem;
+    padding: 3rem;
+}
+
+.package3 {
+    grid-column: 6/7;
+    background-color: white;
+    margin-bottom: 2rem;
+    padding: 3rem;
+}
+
+.freeShipping {
+    grid-column: 1/8;
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.contentBox4 {
+    grid-column: 3/9;
+    background-color: #B72828;
+    color: white;
+    display: grid;
+    grid-template-columns: 3fr 5fr;
+    margin-bottom: 10rem;
+}
+
+.cornerbear {
+    width: 100%;
+    height: 100%;
+}
+
+.right2 {
+    padding: 8rem;
+    padding-top: 12rem;
+}
+
+.footer {
+    grid-column: 1/11;
+    background-color: #FBF8EF;
+    text-align: center;
+    padding: 3rem 0;
+}
